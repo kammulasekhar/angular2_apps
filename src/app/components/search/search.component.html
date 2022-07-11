@@ -1,0 +1,9 @@
+<div class="text-center">
+    <input type="text" placeholder="Enter value"  name="searchValue2" [(ngModel)]="searchValue2" (ngModelChange)="onSearch2()"/>
+    <input type="text" placeholder="Enter value" #searchValue  (keyup)="onSearch(searchValue.value)"/>
+    <div *ngFor="let item of totalData">
+        <div>{{item.id}} {{item.title}}</div>
+    </div>
+</div>
+
+<!-- ngModelChange -->
